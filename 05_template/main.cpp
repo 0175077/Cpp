@@ -27,3 +27,5 @@ void printData(const int(&arData)[nLength])
 	}
 	printf("\n");
 }
+
+// 템플릿에 넣을 수 있는건 기본 자료형 혹은 포인터 말고는 없다
