@@ -6,6 +6,11 @@ C_DECO::C_DECO(C_COMPONENT* pComp) :
 	m_pComp = pComp;
 }
 
+C_DECO::~C_DECO()
+{
+	delete m_pComp;
+}
+
 C_WHIP::C_WHIP(C_COMPONENT* pComp) :
 	C_DECO(pComp)
 {

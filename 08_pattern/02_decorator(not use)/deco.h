@@ -9,7 +9,7 @@ protected:
 
 public:
 	C_DECO(C_COMPONENT* pComp);
-
+	~C_DECO();
 };
 
 class C_WHIP : public C_DECO

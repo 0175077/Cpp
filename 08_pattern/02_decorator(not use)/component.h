@@ -11,6 +11,7 @@ protected:
 
 public:
 	C_COMPONENT() = default;
+	virtual ~C_COMPONENT() = default;
 	virtual void printStr() abstract;
 	virtual int Cost() abstract;
 };

@@ -1,9 +1,15 @@
-﻿#include <iostream>
+﻿#define _CRTDBG_MAP_ALLOC
+#include <stdlib.h>
+#include <crtdbg.h>
+
+#include <iostream>
 #include "component.h"
 #include "deco.h"
 
 int main()
 {
+    _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+
     C_COMPONENT* pComp1 = new C_ESPRESSO{};
     
     pComp1 = new C_WHIP(pComp1);
@@ -18,4 +24,6 @@ int main()
     pComp2->printStr();
     printf("%d\n", pComp2->Cost());
 
+    delete pComp1;
+    delete pComp2;
 }
